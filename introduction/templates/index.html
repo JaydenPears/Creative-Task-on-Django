@@ -1,0 +1,119 @@
+<!--
+    здравствуйте проверяющие!
+    держите ascii кота:
+
+    /\_/\           ___
+   = o_o =_______    \ \ 
+    __^      __(  \.__) )
+(@)<_____>__(_____)____/
+
+    проект свёрстан как небольшая визитка. были применены относительно
+    нестандартные дизайн-приёмы, набирающие популярность в веб-проектах
+    
+    разумеется, из-за использования пьюр html и css не удалось
+    сделать что-то масштабное, однако здесь использован бутстрап (в частности
+    для более удобного позиционирования объектов)!
+
+    я также не проверял совместимость некоторых классов с
+    браузерами, отличными от хромиум-подобных (надеюсь, что
+    вы не используете firefox, или что-то в этом духе, да...)
+
+    для анимаций была использована яваскрипт библиотека aos,
+    они простые, но в то же время вполне подходят для небольшого
+    таска как этот. сайт также полностью на английском, потому что
+    необходимый шрифт не поддерживает кириллицу.
+-->
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vladimir Chernov</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'sheets.css' %}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div class="section--hero">
+        <div class="section--hero--main">
+
+            <div>
+                <h1 class="text--title section--hero--main--title">
+                    VLADIMIR CHERNOV
+                </h1>
+            </div>
+
+        </div>
+    </div>
+    <div class="section--about">
+        <div class="container section--about--main">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center"
+            data-aos-duration="1500" style="margin-bottom: 256px;">
+                <div class="row">
+                    <div class="col" style="max-width: 50%">
+                        <h1 class="text--title">it's <span class="text--gradient">me</span>.</h1>
+                        <p class="text--default" style="margin-bottom: 20px;">I am 17 years old, I live in Moscow and actively study programming. Let's get to know each other a little closer. 
+                            I have been studying industrial programming in Python for the last two years.
+                            You can also visit my github repository, to browse
+                            all my projects in one place.
+                        </p>
+                        <a href="https://github.com/JaydenPears" class="button--neutral" style="margin-right: 5px;">here is github</a><a href="https://vk.com/jayden_saula"><img src="https://www.dropbox.com/team/team_logo/dbtid%3AAACHQZx4adzBZiBCpy7P4xtzn3UNxr-wcoE?v=1634126598663" width="42" height="42"></a>
+                    </div>
+                    <div class="col">
+                        <img src="https://i.imgur.com/Dva02tZ.png" align="right" alt="abstract-thing" width="400" height="400">
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center"
+            data-aos-duration="1500">
+                <center>
+                    <h1 class="text--title">it's my <span class="text--gradient">competence</span>.</h1>
+                    <p class="text--default">I often use languages ​​in solving tasks. Here is some honest examples ^_^</p>
+                </center>
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col" style="max-width: 50%">
+                        <div class="element--card--placeholder">
+                            <div class="card--logo" style="margin-right: 10px;">
+                                <img src="https://logos-download.com/wp-content/uploads/2016/10/Python_logo_icon.png" alt="pylogo" height="64" width="64">
+                            </div>
+                            <div class="card--text">
+                                <p class='card--text--up'>PYTHON</p>
+                                <p style="margin-top: 0px; margin-bottom: 0px;">My main and favorite language is python.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="max-width: 50%">
+                        <div class="element--card--placeholder">
+                            <div class="card--logo" style="margin-right: 10px;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt="pylogo" height="64" width="64">
+                            </div>
+                            <div class="card--text">
+                                <p class='card--text--up'>С++</p>
+                                <p style="margin-top: 0px; margin-bottom: 0px;">I also know and use C++ well. Thank god.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="max-width: 50%">
+                        <div class="element--card--placeholder">
+                            <div class="card--logo" style="margin-right: 10px;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="pylogo" height="64" width="64">
+                            </div>
+                            <div class="card--text">
+                                <p class='card--text--up'>JavaScript</p>
+                                <p style="margin-top: 0px; margin-bottom: 0px;">strangest language i've ever seen, but ok.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

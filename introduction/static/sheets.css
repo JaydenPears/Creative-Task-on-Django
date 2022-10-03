@@ -1,0 +1,142 @@
+/* yet another cool font */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+body { 
+	background-color: #000000;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, p {
+	font-family: 'Syne', sans-serif;
+	color: #ffffff;
+}
+
+.text--title {
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.text--default {
+    font-size: 18px;
+    color: #cccccc;
+}
+
+.text--subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.section--hero {
+    height: auto;
+    background: url("img/background.jpeg") rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+}
+
+.section--hero--main {
+    min-height: 969px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section--hero--main--title {
+    background-color: #000000;
+    margin-top: 24px;
+}
+
+.section--hero--main--subtitle {
+    color: black;
+    background-color: #ffffff;
+    position: absolute;
+    right: 22.9%;
+    min-width: 1032px;
+    text-align: center;
+}
+
+.section--hero--main--subtitle-github {
+    color: #1000c3;
+    background-color: #7dffcf;
+    position: absolute;
+    margin-top: -8px;
+    right: 22.9%;
+    font-weight: 800;
+}
+
+.section--hero--main--subtitle-github:hover {
+    color: #7dffcf;
+    background-color: #1000c3;
+}
+
+.section--hero--main--subtitle span {
+    font-weight: 800;
+}
+
+.section--about {
+    background-color: rgba(0, 0, 0, 1);
+    height: 1300px;
+}
+
+.section--about--main {
+    padding-top: 100px;
+}
+
+.text--gradient {
+    background:
+	-webkit-linear-gradient(0deg, #dc36fa 0%, #a167ef 30%, #609fe4 45%, #3abfde 70%, #04d18e 85%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.button--neutral {
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 8px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+}
+
+.button--neutral:hover {
+    background-color: black;
+    color: white;
+}
+
+.element--card--placeholder {
+    border-radius: 20px;
+    padding: 10px;
+    transition: background 300ms ease 0s, border 200ms ease 0s;
+}
+
+.element--card--placeholder:hover {
+    background-color: rgba(255, 255, 255, .1);
+    cursor: pointer;
+}
+
+.card--logo {
+    display: inline-block;
+}
+
+.card--text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card--text--up {
+    font-weight: 800; 
+    margin-bottom: 0px;
+}
+
+.section--involved {
+    background-color: rgb(0, 0, 0);
+    height: 1200px;
+}
